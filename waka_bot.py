@@ -231,7 +231,7 @@ async def process_buy(callback: types.CallbackQuery):
     product = WAKA_PRODUCTS.get(product_key)
     flavor_name = product["flavors"][flavor_idx]
     
-    msg_text = f"Сәлеметсіз бе! Мен {product['name']} ({flavor_name}) алғым келеді."
+    msg_text = f"Сәлеметсіз бе! Мен {product['name']} ({flavor_name}) тапсырыс бергім келеді."
     encoded_text = msg_text.replace(" ", "%20")
     
     link = f"https://t.me/{MANAGER_USERNAME}?text={encoded_text}"
